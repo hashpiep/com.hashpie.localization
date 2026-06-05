@@ -9,10 +9,6 @@ namespace Hashpie.Localization.Editor
 {
     public class LocalEditorWindow : EditorWindow
     {
-        [SerializeField] 
-        private VisualTreeAsset m_VisualTreeAsset;
-        [SerializeField] 
-        private StyleSheet m_StyleSheet;
         private Dictionary<string, string> currentLocal;
         private string currentFilePath;
         [MenuItem("Window/Hashpie/Localization Editor")]
@@ -24,7 +20,11 @@ namespace Hashpie.Localization.Editor
         public void CreateGUI()
         {
             VisualElement root = rootVisualElement;
-            VisualElement rootUXML = m_VisualTreeAsset.Instantiate();
+
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
+            "Packages/com.hashpie.localization/Editor/LocalEditorWindow.uxml"
+            );
+            VisualElement rootUXML = visualTree.Instantiate();
 
             rootUXML.Q<Button>("CreateBtn").clicked += () => OnCreateBtnPressed(root);
             rootUXML.Q<Button>("LoadBtn").clicked += () => OnLoadBtnPressed(root);
