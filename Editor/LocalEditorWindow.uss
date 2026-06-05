@@ -1,0 +1,58 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+#BtnRow {
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#FlexColumn {
+}
+
+#Middle {
+    flex-grow: 11;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+#BtnRow Button {
+    width: initial;
+    aspect-ratio: auto;
+    height: auto;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+#AddKeyTextField Label {
+    align-self: center;
+    -unity-text-align: upper-center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#TextFieldContainer {
+    flex-direction: row;
+    flex-grow: 0;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#KeysAndValuesScrView {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#AddKeyTextField {
+    flex-grow: 1;
+}
+
+#InfoLabel {
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    white-space: pre-wrap;
+}

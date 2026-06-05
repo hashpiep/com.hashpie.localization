@@ -1,0 +1,9 @@
+{
+	"name": "com.hashpie.localization",
+	"version": "1.0.0",
+	"displayName": "Hashpie Localization",
+	"description": "Hashpie's Localization Package",
+	"dependencies": {
+		"com.unity.nuget.newtonsoft-json": "3.2.2"
+	}
+}

@@ -1,0 +1,21 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.hashpie.localization/Editor/LocalEditorWindow.uss?fileID=7433441132597879392&amp;guid=ed711b89743a9ff42bed17ee4437e163&amp;type=3#LocalEditorWindow"/>
+    <ui:VisualElement name="FlexColumn" style="flex-grow: 1;">
+        <ui:VisualElement name="BtnRow">
+            <ui:Button text="Create JSON" name="CreateBtn"/>
+            <ui:Button text="Load JSON" name="LoadBtn"/>
+            <ui:Button text="Add missing keys from another JSON" name="AddMissingKeysBtn"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Middle">
+            <ui:VisualElement name="TextFieldContainer">
+                <ui:TextField label="Add Key:" placeholder-text="ex.: name, dialogue_1, btn_play..." name="AddKeyTextField"/>
+                <ui:Button text="Add" name="AddKeyBtn"/>
+            </ui:VisualElement>
+            <ui:ScrollView name="KeysAndValuesScrView" horizontal-scroller-visibility="Auto" vertical-scroller-visibility="AlwaysVisible"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="BtnRow">
+            <ui:Button text="Save" name="SaveBtn"/>
+        </ui:VisualElement>
+        <ui:Label text="" name="InfoLabel"/>
+    </ui:VisualElement>
+</ui:UXML>
