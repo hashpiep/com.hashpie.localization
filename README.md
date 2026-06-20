@@ -1,2 +1,3 @@
-# hashpie-unity-localization
-My Own Localization Package for Unity
+# com.frogbaseball.localization
+
+my own localization package for unity
