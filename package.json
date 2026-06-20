@@ -1,8 +1,8 @@
 {
-	"name": "com.hashpie.localization",
+	"name": "com.frogbaseball.localization",
 	"version": "1.0.0",
-	"displayName": "Hashpie Localization",
-	"description": "Hashpie's Localization Package",
+	"displayName": "Frog Baseball Localization",
+	"description": "Frog Baseball's Localization Package",
 	"dependencies": {
 		"com.unity.nuget.newtonsoft-json": "3.2.2"
 	}

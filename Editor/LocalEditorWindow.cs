@@ -5,13 +5,13 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-namespace Hashpie.Localization.Editor
+namespace FrogBaseball.Localization.Editor
 {
     public class LocalEditorWindow : EditorWindow
     {
         private Dictionary<string, string> currentLocal;
         private string currentFilePath;
-        [MenuItem("Window/Hashpie/Localization Editor")]
+        [MenuItem("Window/Frog Baseball/Localization Editor")]
         public static void ShowWindow()
         {
             LocalEditorWindow wnd = GetWindow<LocalEditorWindow>();
@@ -22,7 +22,7 @@ namespace Hashpie.Localization.Editor
             VisualElement root = rootVisualElement;
 
             var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
-            "Packages/com.hashpie.localization/Editor/LocalEditorWindow.uxml"
+            "Packages/com.frogbaseball.localization/Editor/LocalEditorWindow.uxml"
             );
             VisualElement rootUXML = visualTree.Instantiate();
 

@@ -1,14 +1,13 @@
-using Hashpie.Localization;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-namespace Hashpie.Localization.Editor
+namespace FrogBaseball.Localization.Editor
 {
     public class LocalizationMenuItems
     {
-        [MenuItem("Assets/Create/Hashpie Localization/Create Local")]
+        [MenuItem("Assets/Create/Frog Baseball Localization/Create Local")]
         private static void CreateLocal()
         {
             string path = AssetDatabase.GetAssetPath(Selection.activeObject);
@@ -23,7 +22,7 @@ namespace Hashpie.Localization.Editor
             File.WriteAllText(fullPath, json);
             AssetDatabase.Refresh();
         }
-        [MenuItem("GameObject/Hashpie/Localization/LocalizationManager")]
+        [MenuItem("GameObject/Frog Baseball/Localization/LocalizationManager")]
         private static void CreateLocalizationManager(MenuCommand menuCommand)
         {
             GameObject obj = new GameObject("LocalizationManager");

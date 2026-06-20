@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-namespace Hashpie.Localization
+namespace FrogBaseball.Localization
 {
     public class LocalizationManager : MonoBehaviour
     {
